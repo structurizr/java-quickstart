@@ -19,6 +19,8 @@ public class Structurizr {
         Model model = workspace.getModel();
         ViewSet viewSet = workspace.getViews();
 
+        // create your model and views here
+
         outputWorkspaceToConsole(workspace);
         uploadWorkspaceToStructurizr(workspace);
     }
