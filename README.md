@@ -9,7 +9,7 @@ See [structurizr.com](http://www.structurizr.com) for more information about Str
 To build this example from the sources (you'll need Java 8):
 
 ```
-git clone https://github.com/structurizr/structurizr-java-starter.git
+git clone https://github.com/structurizr/java-starter.git
 cd java-starter
 chmod u+x gradlew
 ./gradlew build
