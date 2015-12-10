@@ -1,8 +1,8 @@
 # Structurizr for Java starter
 
-This is a simple starting point for using Structurizr for Java.
+This is a simple starting point for using [Structurizr for Java](https://github.com/structurizr/java).
 
-See [structurizr.com](http://www.structurizr.com) for more information about Structurizr and creating software architecture models as code.
+See [Structurizr](https://structurizr.com) for more information about Structurizr and creating software architecture models as code.
 
 ## Building
 
@@ -23,4 +23,4 @@ To run the example:
 ./gradlew run
 ```
 
-__Note__: In order to upload your model to structurizr.com through the web API, you'll need your own API key and secret. You can get these by signing up for a free account at [structurizr.com](http://www.structurizr.com) and creating a workspace after you've signed in.
+__Note__: In order to upload your model to Structurizr through the web API, you'll need your own API key and secret. You can get these by [signing up for a free account](https://www.structurizr.com/signup) and creating a workspace after you've signed in.
