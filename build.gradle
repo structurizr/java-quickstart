@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.structurizr:structurizr-core:0.8.0'
+    compile 'com.structurizr:structurizr-core:0.7.0'
 }
 
 mainClassName = "com.mycompany.mysystem.Structurizr"
