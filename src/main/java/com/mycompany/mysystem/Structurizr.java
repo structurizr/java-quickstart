@@ -30,7 +30,7 @@ public class Structurizr {
         SoftwareSystem softwareSystem = model.addSoftwareSystem("Software System", "My software system.");
         user.uses(softwareSystem, "Uses");
 
-        SystemContextView contextView = viewSet.createContextView(softwareSystem, "A description of this diagram.");
+        SystemContextView contextView = viewSet.createSystemContextView(softwareSystem, "Context", "A description of this diagram.");
         contextView.addAllSoftwareSystems();
         contextView.addAllPeople();
         contextView.setPaperSize(PaperSize.A5_Landscape);
