@@ -11,7 +11,6 @@ dependencies {
 }
 
 mainClassName = "com.mycompany.mysystem.Structurizr"
-applicationDefaultJvmArgs = ["-Dhttps.proxyHost=proxy.xxx.xxx.com -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy.xxx.xxx.com -Dhttp.proxyPort=8080"]
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
