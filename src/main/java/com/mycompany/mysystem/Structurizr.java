@@ -21,20 +21,24 @@ public class Structurizr {
     private static final long WORKSPACE_ID = 1234;
 
     public static void main(String[] args) throws Exception {
+        // a Structurizr workspace is the wrapper for a software architecture model, views and documentation
         Workspace workspace = new Workspace("My model", "This is a model of my software system.");
         Model model = workspace.getModel();
         ViewSet viewSet = workspace.getViews();
         Styles styles = viewSet.getConfiguration().getStyles();
 
+        // add some elements to your software architecture model
         Person user = model.addPerson("User", "A user of my software system.");
         SoftwareSystem softwareSystem = model.addSoftwareSystem("Software System", "My software system.");
         user.uses(softwareSystem, "Uses");
 
+        // define some views (the diagrams you would like to see)
         SystemContextView contextView = viewSet.createSystemContextView(softwareSystem, "Context", "A description of this diagram.");
         contextView.addAllSoftwareSystems();
         contextView.addAllPeople();
         contextView.setPaperSize(PaperSize.A5_Landscape);
 
+        // optionally, add some styling
         styles.addElementStyle(Tags.SOFTWARE_SYSTEM).background("#1168bd").color("#ffffff");
         styles.addElementStyle(Tags.PERSON).background("#08427b").color("#ffffff");
 
@@ -43,7 +47,7 @@ public class Structurizr {
 
     private static void uploadWorkspaceToStructurizr(Workspace workspace) throws Exception {
         StructurizrClient structurizrClient = new StructurizrClient(API_KEY, API_SECRET);
-        structurizrClient.mergeWorkspace(WORKSPACE_ID, workspace);
+        structurizrClient.putWorkspace(WORKSPACE_ID, workspace);
     }
 
 }

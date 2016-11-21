@@ -7,10 +7,11 @@ repositories {
 }
 
 dependencies {
-    compile 'com.structurizr:structurizr-core:1.0.0-RC1'
+    compile 'com.structurizr:structurizr-core:1.0.0-RC2'
 }
 
 mainClassName = "com.mycompany.mysystem.Structurizr"
+applicationDefaultJvmArgs = ["-Dhttps.proxyHost=proxy.xxx.xxx.com -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy.xxx.xxx.com -Dhttp.proxyPort=8080"]
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
