@@ -2,6 +2,8 @@ package com.mycompany.mysystem;
 
 import com.structurizr.Workspace;
 import com.structurizr.api.StructurizrClient;
+import com.structurizr.documentation.Format;
+import com.structurizr.documentation.StructurizrDocumentation;
 import com.structurizr.model.Model;
 import com.structurizr.model.Person;
 import com.structurizr.model.SoftwareSystem;
@@ -37,6 +39,14 @@ public class Structurizr {
         contextView.addAllSoftwareSystems();
         contextView.addAllPeople();
         contextView.setPaperSize(PaperSize.A5_Landscape);
+
+        // add some documentation
+        StructurizrDocumentation documentation = new StructurizrDocumentation(model);
+        workspace.setDocumentation(documentation);
+        documentation.addContextSection(softwareSystem, Format.Markdown,
+                "Here is some context about the software system...\n" +
+                        "\n" +
+                        "![](embed:Context)");
 
         // optionally, add some styling
         styles.addElementStyle(Tags.SOFTWARE_SYSTEM).background("#1168bd").color("#ffffff");
