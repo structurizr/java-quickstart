@@ -3,11 +3,10 @@ apply plugin:'application'
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
-    compile 'com.structurizr:structurizr-core:1.0.0-RC3'
+    compile 'com.structurizr:structurizr-core:1.0.0-RC4'
 }
 
 mainClassName = "com.mycompany.mysystem.Structurizr"
