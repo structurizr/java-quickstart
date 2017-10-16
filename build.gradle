@@ -9,7 +9,7 @@ dependencies {
     compile 'com.structurizr:structurizr-core:1.0.0-RC4'
 }
 
-mainClassName = "com.mycompany.mysystem.Structurizr"
+mainClassName = "Structurizr"
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'

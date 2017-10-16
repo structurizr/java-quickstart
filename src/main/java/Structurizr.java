@@ -1,5 +1,3 @@
-package com.mycompany.mysystem;
-
 import com.structurizr.Workspace;
 import com.structurizr.api.StructurizrClient;
 import com.structurizr.documentation.Format;
@@ -15,9 +13,9 @@ import com.structurizr.view.*;
  */
 public class Structurizr {
 
+    private static final long WORKSPACE_ID = 1234;
     private static final String API_KEY = "key";
     private static final String API_SECRET = "secret";
-    private static final long WORKSPACE_ID = 1234;
 
     public static void main(String[] args) throws Exception {
         // a Structurizr workspace is the wrapper for a software architecture model, views and documentation
