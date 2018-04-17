@@ -5,7 +5,7 @@ This is a simple starting point for using [Structurizr for Java](https://github.
 ## 1. Clone the repo
 
 ```
-git clone https://github.com/structurizr/java-starter.git
+git clone https://github.com/structurizr/java-quickstart.git
 ```
 
 ## 2. Set your workspace ID, API key and secret
