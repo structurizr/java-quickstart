@@ -23,7 +23,7 @@ private static final String API_SECRET = "secret";
 Finally, run the program, using your IDE or Gradle; for example:
 
 ```
-cd java-starter
+cd java-quickstart
 ./gradlew run
 ```
 
