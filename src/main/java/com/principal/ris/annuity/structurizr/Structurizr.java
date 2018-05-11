@@ -1,3 +1,5 @@
+package com.principal.ris.annuity.structurizr;
+
 import com.structurizr.Workspace;
 import com.structurizr.api.StructurizrClient;
 import com.structurizr.documentation.Format;
